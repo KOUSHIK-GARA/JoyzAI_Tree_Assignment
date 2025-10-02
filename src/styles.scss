@@ -1,0 +1,74 @@
+
+$color37e: #1a237e;
+$color7fb : #f4f7fb;
+$colorfff: #ffffff;
+$color8ef : #e3e8ef;
+$color0fe: #e8f0fe;
+$color333 : #333;
+$color7de : #d0d7de;
+$color5c0: #1565c0;
+$color009: #0009;
+$fontsans : 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.container{
+  font-family: $fontsans;
+  padding: 30px;
+  background: $color7fb;
+  min-height: 100vh;
+}
+
+.title{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: $color37e;
+  letter-spacing: 1px;
+}
+
+.tree{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.node{
+  cursor: pointer;
+  padding: 8px 14px;
+  margin: 4px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  background: $colorfff;
+  border : 1px solid $color8ef;
+  box-shadow: 0 1px 3px $color009;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.node:hover{
+  background: $color0fe;
+  transform: translateX(3px);
+}
+
+
+.toggle{
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $color5c0;
+  width: 18px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.label{
+  flex:1;
+  color: $color333;
+}
+
+.nested-tree{
+  margin-left: 22px;
+  border-left: 2px dashed $color7de;
+  padding-left: 12px;
+  transition: all 0.3s ease-in-out;
+}

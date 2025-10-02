@@ -1,0 +1,17 @@
+<ul class="tree">
+  <li>
+    <div class="node" (click)="toggle()">
+      <span *ngIf="hasChildren()" class="toggle">
+        <span [innerHTML]="isCollapsed ? downArrow : upArrow"></span>
+      </span>
+      <span class="label">{{rootNode}}</span>
+    </div>
+
+    <ul *ngIf="!isCollapsed && hasChildren()" class="nested-tree">
+      <ng-container *ngFor="let child of getChildren(rootNode)">
+          <app-tree-view [data]="data" [rootNode]="child"></app-tree-view>
+      </ng-container>
+
+    </ul>
+  </li>
+</ul>
