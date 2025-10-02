@@ -1,27 +1,35 @@
-# TreeAssignment
+# JoyzAi Angular Tree Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+## Overview
 
-## Development server
+This Angular project demonstrates a **dynamic hierarchical tree structure** rendered with a recursive approach.  
+Each node can be expanded/collapsed independently. The root node is detected automatically from the provided tree data. The UI is styled in a modern accordion/folder style for a clean, professional look.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Automatically detects the **root node** from the input tree data.
+- Recursive rendering supporting **arbitrary depth**.
+- Accordion-style **expand / collapse** for each node.
+- Arrow indicators (▲ for collapsed, ▼ for expanded) for better UX.
+- Clean, card-like styling with dashed vertical lines to indicate hierarchy.
+- Smooth expand/collapse transitions.
+- No external libraries — built purely with Angular.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Installation**
 
-## Running unit tests
+Clone the repository:
+git clone https://github.com/KOUSHIK-GARA/JoyzAI_Tree_Assignment.git
+cd JoyzAI_Tree_Assignment
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+Install dependencies:
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Serve the application:
+ng serve
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Open your browser:
+http://localhost:4200
