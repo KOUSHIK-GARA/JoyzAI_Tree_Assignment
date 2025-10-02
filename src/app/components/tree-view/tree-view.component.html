@@ -1,6 +1,6 @@
 <ul class="tree">
   <li>
-    <div class="node" (click)="toggle()">
+    <div class="node" tabindex="0" (click)="toggle()" (keydown)="onKeyDown($event)">
       <span *ngIf="hasChildren()" class="toggle">
         <span [innerHTML]="isCollapsed ? downArrow : upArrow"></span>
       </span>

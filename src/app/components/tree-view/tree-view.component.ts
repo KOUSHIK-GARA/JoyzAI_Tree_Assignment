@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-tree-view',
@@ -26,6 +26,20 @@ export class TreeViewComponent {
   hasChildren() : boolean {
     return this.getChildren(this.rootNode).length > 0;
   }
+
+  onKeyDown(event : KeyboardEvent){
+    if(event.key === 'Enter'){
+      event.preventDefault();
+      this.toggle();
+    }
+    if(event.key === 'Escape'){
+      event.preventDefault();
+      if(!this.isCollapsed){
+        this.isCollapsed = true;
+      }
+    }
+  }
+  
 
 
   
